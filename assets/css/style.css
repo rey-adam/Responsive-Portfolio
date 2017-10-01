@@ -11,6 +11,8 @@ body {
 }
 
 
+
+
 /* general */
 
 .container {
@@ -50,6 +52,8 @@ h2,
 h3 {
     font-size: 22px;
 }
+
+
 
 
 /* header */
@@ -99,6 +103,8 @@ nav a:first-child {
 }
 
 
+
+
 /* footer */
 
 footer {
@@ -111,6 +117,8 @@ footer {
     background: #666;
     border-top: 8px solid #4aaaa5;
 }
+
+
 
 
 /* sidebar */
@@ -145,6 +153,8 @@ h3,
 }
 
 
+
+
 /* main */
 
 #main-container {
@@ -160,6 +170,8 @@ h3,
     background: #fff;
     border: 1px solid #ddd;
 }
+
+
 
 
 /* portfolio page */
@@ -203,6 +215,8 @@ h3,
     margin-top: 10px;
     margin-right: 25px;
 }
+
+
 
 
 /* contact page */
@@ -249,68 +263,105 @@ input[type=submit] {
 /* media queries */
 
 
+/* what the pages will look like if the screen are 980 or less */
+
+@media screen and (max-width: 980px) {
+
+    .container {
+        width: 748px;
+    }
+
+    .main-section {
+        width: 100%;
+        max-width: 440px;
+    }
+
+    .sidebar {
+        width: 100%;
+        max-width: 260px;
+    }
+
+    /*.auth-image {
+        width: 100%;
+    }*/
+
+    .work {
+      width: 100%;
+    }
+}
+
+/* what the pages will look like if the screen are 768 or less */
+
+@media screen and (max-width: 768px) {
+
+    .container {
+        width: 700px;
+    }
+
+
+    .sidebar,
+    .main-section {
+        width: 100%;
+        max-width: 700px;
+    }
+
+
+    .work {
+        overflow: auto;
+        width: 298px;
+    }
+
+    .work h3 {
+        line-height: 15px;
+        font-size: 16px;
+    }
+
+
+}
+
+
 
 /* what the pages will look like if the screen are 640 or less */
+
 @media screen and (max-width: 640px) {
 
     .container {
         width: 100%;
     }
 
+    #masterhead {
+      position: fixed;
+    }
+
     #logo {
-        /*position: fixed;*/
+        position: fixed;
         top: 0;
         width: 100%;
-        clear: left;
+        /*clear: left;*/
     }
 
     .nav {
-      width: 100%;
-      text-align: center;
+        width: 100%;
+        text-align: center;
+
     }
 
     #main-container {
         width: 100%;
         padding: 20px;
-        /*margin-top: 100px;*/
-        clear: both; 
+        margin-top: 30%;
+        clear: both;
     }
 
     .sidebar {
         width: 100%;
         max-width: 650px;
-
     }
 
-
-}
-
-
-
-
-/* what the pages will look like if the screen are 768 or less */
-@media screen and (max-width: 768px) {
-
-    .container {
-      width: 620px;
-    }
-
-    .sidebar {
+    .work {
       width: 100%;
-      max-width: 620px;
     }
 }
-
-
-/* what the pages will look like if the screen are 980 or less */
-@media screen and (max-width: 980px) {
-
-    
-}
-
-
-
-
 
 
 
