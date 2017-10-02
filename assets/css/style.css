@@ -329,13 +329,15 @@ input[type=submit] {
         width: 100%;
     }
 
-    #masterhead {
+    #masthead {
       position: fixed;
+      /* added */
+      top: 0;
     }
 
     #logo {
-        position: fixed;
-        top: 0;
+        /*position: fixed;
+        top: 0;*/
         width: 100%;
         /*clear: left;*/
     }
